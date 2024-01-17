@@ -172,16 +172,16 @@
 
 /* Style for the Container */
 .container2 {
+	gap: 20px;
 	display: flex;
 	justify-content: space-around;
-	margin-top: 20px;
+	margin: 20px;
 	flex-wrap: wrap; /* Allow items to wrap onto the next line */
 }
 
 /* Style for each Item */
-.item1,
-.item2,
-.item3 {
+
+.item {
 	flex: 1;
 	width: 100%;
 	max-width: 300px;
@@ -196,9 +196,7 @@
 	transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.item1 img,
-.item2 img,
-.item3 img {
+.item img {
 	width: 100%;
 	max-width: 150px;
 	height: auto;
@@ -207,17 +205,14 @@
 	background-color: transparent;
 }
 
-.item1 p,
-.item2 p,
-.item3 p {
+.item p {
 	color: #666;
 	font-size: 1rem;
 }
 
 /* Hover Effect */
-.item1:hover,
-.item2:hover,
-.item3:hover {
+
+.item:hover {
 	transform: scale(1.02);
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 	background-color: #eee0e0;
