@@ -4,7 +4,9 @@ Welcome to the Food Delivery Website created by Deepansh! This web application a
 
 ## Table of Contents
 
+- [Website URL]( https://coder-deep1.github.io/food-delivery-/)
 - [Features](#features)
+- [Technologies Used](#technologies-used)
 - [Getting Started](#getting-started)
 - [Usage](#usage)
 - [Contributing](#contributing)
@@ -16,6 +18,13 @@ Welcome to the Food Delivery Website created by Deepansh! This web application a
 2. **User Authentication:** Sign up and log in to the website to place orders.
 3. **Order Management:** View and manage your order history.
 4. **Responsive Design:** The website is designed to work seamlessly on different devices and screen sizes.
+
+## Technologies Used
+
+The Food Delivery Website is built using the following technologies:
+
+- **HTML:** The standard markup language for creating web pages.
+- **CSS:** A style sheet language used for describing the look and formatting of a document written in HTML.
 
 ## Getting Started
 
