@@ -1,466 +1,494 @@
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-		"Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-	scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
 }
 
 :root {
-	--navbar-height: 60px;
+  --navbar-height: 60px;
 }
 
 /* Navbar Styles */
 .navbar {
-	display: flex;
-	align-items: center;
-	position: relative;
-	justify-content: space-between;
-	height: var(--navbar-height);
-	transition: height 0.3s ease;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: space-between;
+  height: var(--navbar-height);
+  transition: height 0.3s ease;
 }
 
 .logo {
-	margin: 10px 15px;
+  margin: 10px 15px;
 }
 
 .logo img {
-	width: 50px;
-	height: 50px;
-	margin: 5px 10px;
+  width: 50px;
+  height: 50px;
+  margin: 5px 10px;
 }
 
 .navbar ul {
-	display: flex;
-	list-style: none;
+  display: flex;
+  list-style: none;
 }
 
 .navbar::before {
-	content: "";
-	background-color: #060404;
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	opacity: 0.09;
+  content: "";
+  background-color: #060404;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.09;
 }
 
 .navbar ul li {
-	padding: 15px 20px;
-	font-size: 1.3rem;
-	position: relative;
+  padding: 15px 20px;
+  font-size: 1.3rem;
+  position: relative;
 }
 
 .navbar ul li a {
-	color: #e7e4e4;
-	padding: 5px 15px;
-	border-radius: 8px;
-	display: block;
-	text-decoration: none;
-	position: relative;
-	transition: color 0.3s ease;
+  color: #e7e4e4;
+  padding: 5px 15px;
+  border-radius: 8px;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
 .navbar ul li a::after {
-	content: "";
-	display: block;
-	position: absolute;
-	left: 50%;
-	bottom: 0;
-	width: 0;
-	background-color: #ff1111;
+  content: "";
+  display: block;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0;
+  background-color: #ff1111;
 }
 
 .navbar ul li a:hover {
-	color: #ffffff;
-	border: 2px solid #ff0000;
+  color: #ffffff;
+  border: 2px solid #ff0000;
 }
 
 .navbar ul li a:hover::after {
-	width: calc(100% - 30px);
+  width: calc(100% - 30px);
 }
 
 /* Section1 Styles */
 .section1 {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-	height: 350px;
-	padding: 3px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 350px;
+  padding: 3px 20px;
 }
 
 .section1::before {
-	content: "";
-	background: url(./img/bg2.jpg) center center no-repeat;
-	background-size: cover;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	z-index: -1;
-	opacity: 0.9;
+  content: "";
+  background: url(./img/bg2.jpg) center center no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.9;
 }
 
 .section1 h1 {
-	color: #ffffff;
-	text-align: center;
-	font-size: 2rem;
-	width: 90%;
+  color: #ffffff;
+  text-align: center;
+  font-size: 2rem;
+  width: 90%;
 }
 
 .section1 p {
-	color: #ffffff;
-	text-align: center;
-	font-size: 1rem;
-	width: 400px;
-	margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  font-size: 1rem;
+  width: 400px;
+  margin: 0 auto;
 }
 
 /* Heading and Order Styles */
 .h-primary,
 .heading2 {
-	font-size: 2rem;
-	color: #333;
+  font-size: 2rem;
+  color: #333;
 }
 
 .h-primary marquee {
-	animation: marquee-animation 3s linear infinite;
+  animation: marquee-animation 3s linear infinite;
 }
 
 .order {
-	display: flex;
-	align-items: center;
-	background-color: #ff6347;
-	color: #fff;
-	padding: 10px 25px;
-	margin: 15px;
-	font-size: 1rem;
-	gap: 10px;
-	border: none;
-	border-radius: 5px;
-	cursor: pointer;
-	text-transform: uppercase;
-	font-weight: bold;
-	letter-spacing: 1px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-	transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  align-items: center;
+  background-color: #ff6347;
+  color: #fff;
+  padding: 10px 25px;
+  margin: 15px;
+  font-size: 1rem;
+  gap: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .order:hover {
-	background-color: #f7dfdf;
-	color: #ff2600;
-	transition: 0.8s;
-	border: 2px solid blue;
+  background-color: #f7dfdf;
+  color: #ff2600;
+  transition: 0.8s;
+  border: 2px solid blue;
 }
 
 /* Section2 and Container Styles */
 .section2 {
-	background-color: #fefefe;
-	padding: 50px 0;
-	text-align: center;
+  background-color: #fefefe;
+  padding: 50px 0;
+  text-align: center;
 }
 
 .container2 {
-	gap: 20px;
-	display: flex;
-	justify-content: space-around;
-	margin: 20px;
-	flex-wrap: wrap;
+  gap: 20px;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px;
+  flex-wrap: wrap;
 }
 
 /* Item Styles */
 .item {
-	cursor: pointer;
-	flex: 1;
-	width: 100%;
-	max-width: 300px;
-	min-width: 200px;
-	height: auto;
-	background-color: #e3e6dd4f;
-	border: 1px solid #9ea4d9;
-	border-radius: 20px;
-	padding: 20px;
-	text-align: center;
-	margin: 0 15px;
-	transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+  flex: 1;
+  width: 100%;
+  max-width: 300px;
+  min-width: 200px;
+  height: auto;
+  background-color: #e3e6dd4f;
+  border: 1px solid #9ea4d9;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 15px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .item img {
-	width: 100%;
-	max-width: 150px;
-	height: auto;
-	border-radius: 8px;
-	margin-bottom: 15px;
-	background-color: transparent;
+  width: 100%;
+  max-width: 150px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  background-color: transparent;
 }
 
 .item p {
-	color: #666;
-	font-size: 1rem;
+  color: #666;
+  font-size: 1rem;
 }
 
 /* Hover Effect */
 .item:hover {
-	transform: scale(1.02);
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	background-color: #eee0e0;
-	color: #d6391d;
-	border: 1px solid #ff0000;
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #eee0e0;
+  color: #d6391d;
+  border: 1px solid #ff0000;
 }
 
 /* Contact Section Styles */
 #contact {
-	position: relative;
-	content: "";
-	width: 100%;
-	height: 100%;
-	z-index: -1;
-	opacity: 0.8;
-	background: url(https://media.istockphoto.com/id/1448720788/photo/food-banner-background-with-vegan-products-vegan-food-on-table-top-view-veganuary-concept.webp?b=1&s=170667a&w=0&k=20&c=1V2UOHHtPIFBngJ-WBydZyFe7FjH1oVQmgRApSw-KpU=);
-	object-fit: fill;
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.8;
+  background: url(https://media.istockphoto.com/id/1448720788/photo/food-banner-background-with-vegan-products-vegan-food-on-table-top-view-veganuary-concept.webp?b=1&s=170667a&w=0&k=20&c=1V2UOHHtPIFBngJ-WBydZyFe7FjH1oVQmgRApSw-KpU=);
+  object-fit: fill;
 }
 
 .center {
-	text-align: center;
-	color: #000000;
+  text-align: center;
+  color: #000000;
 }
 
 .form-group {
-	margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 /* Form Label and Input Styles */
 label {
-	display: block;
-	margin-bottom: 5px;
+  display: block;
+  margin-bottom: 5px;
 }
 
 input,
 textarea {
-	width: 100%;
-	padding: 10px;
-	border: 1px solid #ccc;
-	border-radius: 5px;
-	background-color: rgba(255, 255, 255, 0.844);
-	transition: background-color 0.3s ease;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.844);
+  transition: background-color 0.3s ease;
 }
 
 /* Form Focus Styles */
 input:focus,
 textarea:focus {
-	background-color: rgba(255, 255, 255, 0.884);
+  background-color: rgba(255, 255, 255, 0.884);
 }
 
 #contact-box form {
-	width: 60%;
-	margin: 10px;
+  width: 60%;
+  margin: 10px;
 }
 
 #contact-box label {
-	font-size: 1.4rem;
-	font-weight: bold;
+  font-size: 1.4rem;
+  font-weight: bold;
 }
 
 #contact-box {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact-box input,
 #contact-box textarea {
-	width: 100%;
-	padding: 0.5rem;
-	font-size: 1rem;
-	border-radius: 10px;
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 10px;
 }
 
 /* Button Styles */
 .btn {
-	border-radius: 10px;
-	cursor: pointer;
-	text-align: center;
-	width: 100%;
-	padding: 5px;
-	background-color: #d02d2d;
-	color: #fff;
-	font-size: 1rem;
-	letter-spacing: 5px;
-	margin-bottom: 50px;
+  border-radius: 10px;
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  padding: 5px;
+  background-color: #d02d2d;
+  color: #fff;
+  font-size: 1rem;
+  letter-spacing: 5px;
+  margin-bottom: 50px;
 }
 .btn:hover {
-	background-color: #f7dfdf;
-	color: #ff2600;
-	transition: 0.8s;
-	border: 2px solid blue;
+  background-color: #f7dfdf;
+  color: #ff2600;
+  transition: 0.8s;
+  border: 2px solid blue;
 }
 
 /* Footer Styles */
 footer {
-	background-color: #000000;
-	color: #fff;
-	text-align: center;
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
 }
 
 .copy {
-	text-decoration: none;
-	text-align: center;
-	color: #ffff;
+  text-decoration: none;
+  text-align: center;
+  color: #ffff;
 }
 
 .copy:hover {
-	font-size: large;
-	color: #0074d3;
+  font-size: large;
+  color: #0074d3;
 }
 
 /* Media Query for Small Screens */
 /* Media Query for Small Screens */
 @media only screen and (max-width: 768px) {
-	:root {
-		--navbar-height: 50px;
-	}
+  :root {
+    --navbar-height: 50px;
+  }
 
-	.navbar {
-		height: var(--navbar-height);
-	}
+  .navbar {
+    height: var(--navbar-height);
+  }
 
-	.logo img {
-		width: 40px;
-		height: 40px;
-		margin: 5px 5px;
-	}
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px;
+  }
 
-	.navbar ul {
-		flex-direction: column;
-		text-align: center;
-		position: absolute;
-		top: var(--navbar-height);
-		left: 0;
-		width: 100%;
-		background-color: #060404;
-		display: none;
-		z-index: 1;
-	}
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    width: 100%;
+    background-color: #060404;
+    display: none;
+    z-index: 1;
+  }
 
-	.navbar ul.active {
-		display: flex;
-	}
+  .navbar ul.active {
+    display: flex;
+  }
 
-	.navbar ul li {
-		padding: 10px 0;
-	}
+  .navbar ul li {
+    padding: 10px 0;
+  }
 
-	.navbar ul li a::after {
-		width: 0;
-	}
+  .navbar ul li a::after {
+    width: 0;
+  }
 
-	.section1 {
-		height: auto;
-	}
+  .section1 {
+    height: auto;
+  }
 
-	.section1 h1 {
-		font-size: 1.5rem;
-	}
+  .section1 h1 {
+    font-size: 1.5rem;
+  }
 
-	.section1 p {
-		font-size: 0.9rem;
-	}
+  .section1 p {
+    font-size: 0.9rem;
+  }
 
-	.h-primary {
-		font-size: 1.2rem;
-	}
+  .h-primary {
+    font-size: 1.2rem;
+  }
 
-	.order {
-		padding: 8px 20px;
-		font-size: 0.9rem;
-	}
+  .order {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
 
-	.container2 {
-		margin: 10px;
-	}
+  .container2 {
+    margin: 10px;
+  }
 
-	.item {
-		margin: 0 10px;
-	}
+  .item {
+    margin: 0 10px;
+  }
 
-	#contact-box form {
-		width: 100%;
-	}
+  #contact-box form {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 740px) {
-	/* Common styles for both 740px and 768px can be placed here */
-	:root {
-		--navbar-height: 50px;
-	}
+  /* Common styles for both 740px and 768px can be placed here */
+  :root {
+    --navbar-height: 50px;
+  }
 
-	.navbar {
-		height: var(--navbar-height);
-	}
+  .navbar {
+    height: var(--navbar-height);
+  }
 
-	.logo img {
-		width: 40px;
-		height: 40px;
-		margin: 5px 5px;
-	}
+  .logo img {
+    width: 40px;
+    height: 40px;
+    margin: 5px 5px;
+  }
 
-	.navbar ul {
-		flex-direction: column;
-		text-align: center;
-		position: absolute;
-		top: var(--navbar-height);
-		left: 0;
-		width: 100%;
-		background-color: #060404;
-		display: none;
-		z-index: 1;
-	}
+  .navbar ul {
+    flex-direction: column;
+    text-align: center;
+    position: absolute;
+    top: var(--navbar-height);
+    left: 0;
+    width: 100%;
+    background-color: #060404;
+    display: none;
+    z-index: 1;
+  }
 
-	.navbar ul.active {
-		display: flex;
-	}
+  .navbar ul.active {
+    display: flex;
+  }
 
-	.navbar ul li {
-		padding: 10px 0;
-	}
+  .navbar ul li {
+    padding: 10px 0;
+  }
 
-	.navbar ul li a::after {
-		width: 0;
-	}
+  .navbar ul li a::after {
+    width: 0;
+  }
 
-	.section1 {
-		height: auto;
-	}
+  .section1 {
+    height: auto;
+  }
 
-	.section1 h1 {
-		font-size: 1.5rem;
-	}
+  .section1 h1 {
+    font-size: 1.5rem;
+  }
 
-	.section1 p {
-		font-size: 0.9rem;
-	}
+  .section1 p {
+    font-size: 0.9rem;
+  }
 
-	.h-primary {
-		font-size: 1.2rem;
-	}
+  .h-primary {
+    font-size: 1.2rem;
+  }
 
-	.order {
-		padding: 8px 20px;
-		font-size: 0.9rem;
-	}
+  .order {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+  }
 
-	.container2 {
-		margin: 10px;
-	}
+  .container2 {
+    margin: 10px;
+  }
 
-	.item {
-		margin: 0 10px;
-	}
+  .item {
+    margin: 0 10px;
+  }
 
-	#contact-box form {
-		width: 100%;
-	}
+  #contact-box form {
+    width: 100%;
+  }
+}
+
+.hamburger {
+  display: none; /* Hide the hamburger icon by default */
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 15px; /* Adjust the margin as needed */
+}
+
+/* Show the hamburger icon on small screens */
+@media only screen and (max-width: 768px) {
+  .hamburger {
+    display: block; /* Show the hamburger icon */
+  }
+
+  .nav-links {
+    display: none; /* Hide the navigation links initially */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%; /* Full width for the dropdown */
+    background-color: #060404; /* Background color */
+    position: absolute; /* Absolute positioning */
+    top: var(--navbar-height); /* Position below the navbar */
+    left: 0; /* Align to the left */
+  }
+
+  .nav-links.active {
+    display: flex; /* Show links when the active class is added */
+  }
 }
